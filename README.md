@@ -1,17 +1,20 @@
 # 介绍
 
 
-内容可以自己创建、修改或删除。
+Electronic Measurement And Instrument
 
-写作提示见 https://github.com/su-da/notes/wiki
+Introduction： 简介：
 
-有几个不同风格的例子可以看看。
+Wenzheng Soochow University 苏州大学文正学院
 
-* [实验报告式](http://o.iee.io/tmp/report.pdf)
-* [博客式](http://o.iee.io/tmp/posts.pdf)
-* 其他课程同学的例子
-    * [助教](https://openmindclub.gitbooks.io/omooc-py/content/)
-    * [规范一些的例子](https://leohxj.gitbooks.io/a-programmer-prepares/content/)
-    * [Gitbook 使用入门](http://gitbook-zh.wanqing.me/)/[仓库](https://github.com/wwq0327/gitbook-zh)
-    * [GitBook 简明教程](http://www.chengweiyang.cn/gitbook/)/[仓库](https://github.com/chengweiv5/gitbook)
-    * [GitBook文档（中文版）](http://chrisniael.gitbooks.io/gitbook-documentation/content/)/[仓库](https://github.com/chrisniael/gitbook-documentation)
+Learning and Grading 学习与分级
+
+Scores and Credits 成绩与学分
+
+Lab tasks 40% 实验任务 40% Technical Writings 40% 专业文章 40% Discussion and Review 20% 讨论观点 20% How To？ 怎么做？
+
+References 工具书类 Try it Yourself 竭尽全力 Principle Understand 理解原则
+
+From HenryJHao
+
+这门课程的老师让我们写一本《电子测量与仪器》的书，显然一堆英文会让人看的头昏眼花，头脑很懵的我现在开始Mark这本书了。
