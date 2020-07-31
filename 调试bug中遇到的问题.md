@@ -10,3 +10,25 @@
                               VC++目录与C/C++目录区别是什么
                               
 4.解决scanf需要scanf_s代替的情况，工程 -> 项目 -> C/C++ -> 代码生成->安全检查 ->关闭
+
+
+5.for (auto it = s.begin(); it != s.end(); ++it)
+{
+    auto &c = *it;     //auto 创建一个自动变了
+    c = toupper(c);   //使vector中的值变为大写
+}
+等同于 
+for (auto &c : s)     //创建循环的自动变量
+    c = toupper(c); 
+
+
+5.读取测试参数的方法：
+cin 从第一个非空格字符开始读取，直到空格之前，因此会忽略到前置的白色空格字符和尾部空格后面的字符（若要使用cin,输入的测试参数必须不带空格）
+getline(cin,str) :读取整行
+
+6.bool isBgger(type &a,type &b)   //定义类型
+{
+    return a<b;     //升序
+}
+sort(begin, end ,isBgger)
+    
