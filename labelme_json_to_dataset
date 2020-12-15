@@ -4,3 +4,6 @@
 4.cd 至joson_to_dataset.exe   #C:\ProgramData\Anaconda3\envs\tensorflow\Scripts
 5.joson_to_dataset (json_path)
 6.Scripts下会依次生成每个原图对应的dataset
+
+
+若出现module ‘labelme.utils’ has no attribute ‘draw_label 降低版本3.16.5即可
