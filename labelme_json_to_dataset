@@ -1,0 +1,6 @@
+1.修改anaconda环境下的labelme//json_to_dataset.py文件 
+2.路径在lib\sit-pakages\labelme\..\cil\json_to_dataset.py
+3.cmd    conda activate 环境
+4.cd 至joson_to_dataset.exe   #C:\ProgramData\Anaconda3\envs\tensorflow\Scripts
+5.joson_to_dataset (json_path)
+6.Scripts下会依次生成每个原图对应的dataset
