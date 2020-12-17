@@ -2,8 +2,8 @@
 2.路径在lib\sit-pakages\labelme\..\cil\json_to_dataset.py
 3.cmd    conda activate 环境
 4.cd 至joson_to_dataset.exe   #C:\ProgramData\Anaconda3\envs\tensorflow\Scripts
-5.joson_to_dataset (json_path)
-6.Scripts下会依次生成每个原图对应的dataset
-
+5.j
+oson_to_dataset (json_path)
+6.Scripts下会依次生成每个原图对应的dataset，包括img.png原图，info.yaml,lable.png标注图,lable_names.txt,label_viz.png渲染图
 
 若出现module ‘labelme.utils’ has no attribute ‘draw_label 降低版本3.16.5即可
