@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using VM.Core;
+using VM.PlatformSDKCS;
+//using IMVSCnnRetrievalModuCCs;
+namespace VMtest1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string msg;
+            IMVSCnnRetrievalModuCCs.IMVSCnnRetrievalModuCTool myRtl = (IMVSCnnRetrievalModuCCs.IMVSCnnRetrievalModuCTool)VmSolution.Instance["流程1.DL图像检索C1"];
+            VmProcedure myProcedure = (VmProcedure)VmSolution.Instance["流程1"];         
+            if (null == myRtl) return;
+            vmRenderControl1.ModuleSource = myRtl;    
+            //VM文件夹下的comControls\\modules,importRef工具只能复制一部分功能文件，deeplearning模块不在其中，因此要手动复制到工程文件bin目录下
+          
+            msg = "image load";
+            listBox2.Items.Add(msg);
+            listBox2.TopIndex = listBox2.Items.Count - 1;
+            Task.Run(
+                () =>
+                {
+                    myProcedure.Run();
+                    
+                }
+                );
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string msg;
+            try
+            {
+
+                VmSolution.Import("path", "password");  
+                msg = "ok";
+                listBox1.Items.Add(msg);
+                listBox1.TopIndex = listBox1.Items.Count - 1;
+                
+            }
+            catch(VmException ex)
+            {
+                msg = "fail" + Convert.ToString(ex.errorCode,16);
+                listBox1.Items.Add(msg);
+                listBox1.TopIndex = listBox1.Items.Count - 1;
+            }
+        }
+    }
+}
